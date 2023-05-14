@@ -1,0 +1,34 @@
+@font-face {
+    font-family: miFuente;
+    src: url(../fuentes/Highschool.ttf);
+}
+
+.morado{
+    background-color: rgb(149, 51, 241);
+}
+.margenes{
+   margin-left: 50px;
+   margin-right: 50px;
+    
+}
+.margenes2{
+    margin-top: 30px;
+}
+.alinear{
+    text-align: justify;
+}
+.margenes3{
+    margin-left: 50px;
+   margin-right: 50px;
+   margin-bottom: 10px;
+}
+
+.fuente{
+    font-family: miFuente;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(42, 55, 71);
+    color: white;
+    
+}
