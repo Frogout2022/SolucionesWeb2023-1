@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihuay Barzola - Milhos</title>
+    <script type="text/javascript" th:src="@{/js/libreria.js}"></script>
+</head>
+    <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    </script>
+    
+<body>
+    <h1 type="text">Calculo de venta de un Producto</h1>
+
+    <p>Nombre del producto: 
+    <input type="text" placeholder="Ingrese nombre" id="txtNombre">
+    </p>
+
+    <p>Cantidad: 
+    <input type="number" min="0" placeholder="0" id="txtCantidad">
+    </p>
+
+    <p>Precio Unitario: 
+    <input type="number" min="0" step="0.5" placeholder="0.00" id="txtPrecioUni">
+    </p>
+
+    <p>Cupon Descuento: 
+    <input type="text" placeholder="CUPXXX" id="txtCupon">
+    </p>
+
+    <p>Factura: 
+    <select id="comprobante">
+        <option value="true">SI</option>
+        <option value="false">NO</option>
+    </select>
+    </p>
+
+    <p><button id="btn1" onclick="enviarDatos()">
+        PROCESAR
+    </button>
+
+</body>
+</html>

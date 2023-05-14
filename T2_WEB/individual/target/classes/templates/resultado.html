@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTADO</title>
+</head>
+<body>
+    <h1>
+        Detalles de Venta
+    </h1>
+
+    <p>
+        Producto: 
+         <span th:text="${nombre}"></span> 
+    </p>
+    <p>
+        Venta Bruta:
+         <span th:text="${ventaB}"></span> 
+    </p>
+    <p>
+        Descuento Cupon (
+        <span th:text="${porcDesct}"></span>  
+        %) :
+        <span th:text="${desCupon}"></span> 
+    </p>
+    <p>
+        Factura:
+        <span th:text="${factura}"></span>
+    </p>
+
+    <p>
+        -------------------------------
+    </p>
+    <p>
+        TOTAL:
+        <span th:text="${total}"></span>
+    </p>
+
+    <a th:href="@{/Calculo/}"> Regresar</a>
+
+</body>
+</html>
